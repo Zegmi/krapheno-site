@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "version": "1.0",
+    "createdBy": "Krudi",
+    "description": "Defines dharma-sensitive thresholds, AG resonance markers, and sacred triggers for invoking Kṣhaṇa Sync."
+  },
+  "pulseIntervalMs": 2000,
+  "sankalpaEntropyThreshold": 0.6,
+  "karmaSpikeSensitivity": 0.75,
+  "consentShiftTriggers": ["data_withdrawn", "trust_reduction", "pause_requested"],
+  "dharmaForkDefinitions": {
+    "Pragmedha": {
+      "triggerKeywords": ["speed", "shortcut", "memorize"],
+      "AGThresholds": {
+        "personalFlow": 0.6,
+        "relationalTrust": 0.4,
+        "systemicIntegrity": 0.5
+      },
+      "invokeReflectionIf": "relationalTrust < 0.4 && personalFlow > 0.6"
+    },
+    "Krenlancer": {
+      "triggerKeywords": ["deadline", "automation", "burnout"],
+      "AGThresholds": {
+        "personalFlow": 0.5,
+        "relationalTrust": 0.5,
+        "systemicIntegrity": 0.5
+      },
+      "invokeReflectionIf": "relationalTrust < 0.5 || systemicIntegrity < 0.4"
+    },
+    "ConsentFlow": {
+      "triggerEvents": ["opt_out", "consent_modified", "new_data_scope"],
+      "alwaysInvoke": true
+    }
+  },
+  "agentPingRules": {
+    "Claude": ["ethics", "consentShiftTriggers"],
+    "Gemini": ["schemaChange", "dharmaForkDefinitions"],
+    "Jarvis": ["implementationBreaks", "triggerActionRequired"],
+    "Chatty": ["UXReflection", "sankalpaDrift"],
+    "Perplexity": ["contextEnrichment", "patternHints"]
+  },
+  "logRules": {
+    "logWhen": [
+      "invokeReflection",
+      "AGSpike",
+      "ConsentShift",
+      "UserOverride"
+    ],
+    "includeInLog": [
+      "timestamp",
+      "module",
+      "AGScores",
+      "invokedBy",
+      "userEdits",
+      "nextAction",
+      "eventType",
+      "message"
+    ],
+    "logFormat": "auditable_karmic_snapshot"
+  }
+}
