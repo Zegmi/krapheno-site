@@ -1,0 +1,33 @@
+{
+  "name": "krapheno-site",
+  "version": "1.0.0",
+  "description": "X# krapheno-site",
+  "main": "hello-krudi.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zegmi/krapheno-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zegmi/krapheno-site/issues"
+  },
+  "homepage": "https://github.com/Zegmi/krapheno-site#readme",
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  }
+}
